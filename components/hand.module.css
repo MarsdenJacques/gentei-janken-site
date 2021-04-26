@@ -1,0 +1,28 @@
+.hand
+{
+    position: absolute;
+    padding-inline: 5px;
+    padding-block: 10px;
+    z-index: 1;
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end;
+    background-color: teal;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 950px) {
+    .hand
+    {
+        padding-inline: 3px;
+        padding-block: 5px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .hand
+    {
+        padding-inline: 1px;
+        padding-block: 2px;
+    }
+}

@@ -1,0 +1,51 @@
+.flipped
+{
+    animation-name: flip;
+    animation-iteration-count: 1;
+    animation-duration: 2s;
+    background-color: yellow;
+    height: 140px;
+    width: 100px;
+    border-inline: 5px solid rgba(0, 0, 0, 0);
+    background-clip: padding-box;
+}
+.flipped:hover
+{
+    width: 200px;
+    height: 280px;
+}
+.test
+{
+    position: absolute;
+}
+@keyframes flip {
+    from {background-color: red;}
+    to {background-color: yellow; transform: rotate3d(0, 1, 0, 60deg);}
+  }
+
+@media only screen and (max-width: 1100px) {
+    .flipped
+    {
+        height: 98px;
+        width: 70px;
+        margin-inline: 3px;
+    }
+    .flipped:hover
+    {
+        width: 80px;
+        height: 112px;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .flipped
+    {
+        height: 42px;
+        width: 30px;
+        margin-inline: 1px;
+    }
+    .flipped:hover
+    {
+        width: 40px;
+        height: 56px;
+    }
+}
