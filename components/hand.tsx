@@ -1,8 +1,9 @@
 import {useState, useEffect, useRef} from 'react'
 import style from './hand.module.css'
 import Card from './card'
+import {JankenTypes} from '../global-types/janken/janken-card'
 
-export default function Hands() {
+export default function Hand() {
 
     function Play():void
     {
@@ -11,15 +12,17 @@ export default function Hands() {
 
     return(
         <section className = {style.hand}>
-            <Card cardValue = {'test'} flipped = {false} Play = {Play}/>
-            <Card cardValue = {'test'} flipped = {false} Play = {Play}/>
-            <Card cardValue = {'test'} flipped = {false} Play = {Play}/>
-            <Card cardValue = {'test'} flipped = {false} Play = {Play}/>
-            <Card cardValue = {'test'} flipped = {false} Play = {Play}/>
-            <Card cardValue = {'test'} flipped = {false} Play = {Play}/>
-            <Card cardValue = {'test'} flipped = {false} Play = {Play}/>
-            <Card cardValue = {'test'} flipped = {false} Play = {Play}/>
-            <Card cardValue = {'test'} flipped = {false} Play = {Play}/>
+            <Card player = {1} flipped = {false} front = {"/"} back = {"/"} Play = {Play}/>
+            <Card player = {2} flipped = {true} front = {"/"} back = {"/"} Play = {Play}/>
         </section>
     )
 }
+/*            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
+            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
+            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
+            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
+            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
+            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
+            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
+            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
+            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/> */

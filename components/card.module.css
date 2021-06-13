@@ -1,26 +1,33 @@
-.flipped
+.card
 {
     animation-name: flip;
     animation-iteration-count: 1;
     animation-duration: 2s;
-    background-color: yellow;
     height: 140px;
     width: 100px;
     border-inline: 5px solid rgba(0, 0, 0, 0);
     background-clip: padding-box;
 }
-.flipped:hover
+.card:hover
 {
     width: 200px;
     height: 280px;
+}
+.up
+{
+    background-color: blue;
+}
+.down
+{
+    background-color: red;
 }
 .test
 {
     position: absolute;
 }
 @keyframes flip {
-    from {background-color: red;}
-    to {background-color: yellow; transform: rotate3d(0, 1, 0, 60deg);}
+    from {}
+    to {transform: rotate3d(0, 1, 0, 60deg);}
   }
 
 @media only screen and (max-width: 1100px) {
