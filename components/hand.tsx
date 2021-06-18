@@ -1,7 +1,7 @@
 import {useState, useEffect, useRef} from 'react'
 import style from './hand.module.css'
 import Card from './card'
-import {JankenTypes} from '../global-types/janken/janken-card'
+//import {JankenTypes} from '../global-types/janken/janken-card'
 
 export default function Hand() {
 
@@ -17,12 +17,3 @@ export default function Hand() {
         </section>
     )
 }
-/*            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
-            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
-            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
-            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
-            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
-            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
-            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
-            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/>
-            <Card cardValue = {JankenTypes.Rock} flipped = {false} player = {1} Play = {Play}/> */
